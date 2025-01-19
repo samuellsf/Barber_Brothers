@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agendamento Barber Brothers</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="img/berber brothers.png" alt="Barber Brothers" style="width: 15%; margin-right: 25px;">
+                <div class="title">
+                    <h1>Barber Brothers</h1>
+                </div>
+                <img src="img/berber brothers.png" alt="Barber Brothers" style="width: 15%; margin-right: 25px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="img/Home.png" alt="Início"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header>
+        <h1>Bem-vindo ao Agendamento</h1>
+    </header>
+
+        <header><h1><p>  </p></h1></header>
+
+        <div class="gallery">
+            <main>
+                <div class="appointment-form">
+                    <h2>Agende seu horário</h2>
+                    <form action="agendar.php" method="post">
+                     
+                        <div id="cliente-info">
+                            <h3>Informações do Cliente</h3>
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                    
+                        <div id="detalhes-agendamento">
+                            <h3>Detalhes do Agendamento</h3>
+                            <label for="data">Data:</label>
+                            <input type="date" id="data" name="data" required>
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" name="hora" required>
+                            <label for="servico">Serviço:</label>
+                            <select id="servico" name="servico" required>
+                                <option value="corte">Corte</option>
+                                <option value="barba">Barba</option>
+                                <option value="corte">Corte + Alisamento</option>
+                                <option value="combo">Corte + Barbas + freestyles</option>
+                                <option value="combo">Combo (Corte + Barba + Sobrancelha)</option>
+                                <option value="barba">Decidir na Hora </option>
+                            </select>
+                            <label for="duracao">Duração estimada do serviço:</label>
+                            <select id="duracao" name="duracao" required>
+                                <option value="30 minutos">30 minutos</option>
+                                <option value="45 minutos">45 minutos</option>
+                                <option value="60 minutos">60 minutos</option>
+                            </select>
+                        </div>
+                              <div id="preferencias-cliente">
+                            <h3>Preferências do Cliente</h3>
+                            <label for="profissional">Profissional preferido (se aplicável):</label>
+                            <input type="text" id="profissional" name="profissional">
+                            <label for="observacoes">Notas ou observações especiais:</label>
+                            <textarea id="observacoes" name="observacoes"></textarea>
+                        </div>
+                  
+                        <div id="confirmacao-lembretes">
+                            <h3>Confirmação e Lembretes</h3>
+                            <p>Você receberá uma confirmação por email após o agendamento.</p>
+                            <p>Enviaremos lembretes automáticos antes do horário agendado.</p>
+                        </div>
+                 
+                        <div id="politica-cancelamento">
+                            <h3>Política de Cancelamento</h3>
+                            <p>Se precisar cancelar ou reagendar, entre em contato conosco com pelo menos 24 horas de antecedência.</p>
+                        </div>
+              
+                        <div id="pagamento">
+                            <h3>Pagamento</h3>
+                            <p>Opções de pagamento online estão disponíveis após o agendamento.</p>
+                        </div>
+                    
+                        <div id="informacoes-adicionais">
+                            <h3>Informações Adicionais</h3>
+                                 <p>Visite nosas redes.<a href="http://www.barbeariaxyz.com"></a></p>
+                               
+                                 <section id="contato" class="contact">
+  
+                                <p> <a href="https://www.instagram.com/seupagina" target="_blank"><img src="img/Instagram-icon-Logo.png" alt="Instagram" width="64" height="64"></a></p> 
+
+                                <p> <a href="https://www.facebook.com/seupagina" target="_blank"><img src="img/face.png" alt="Facebook" width="70" height="70"></a></p> 
+
+                                <p> <a href="https://wa.me/seunumero"><img src="img/wts.png" alt="WhatsApp" width="70" height="70"></a></p> 
+                                </section>
+
+                                </p></a> para mais informações sobre promoções e pacotes especiais.</p>
+                                </div> 
+                                <button type="submit">Agendar</button> </form> </div> </main>
+                                </div>
+                                </section>
+                                </main>
+                                <footer style="text-align: center; margin-top: 100px;"> <p>&copy; 2025 Barber Brothers Desenvolvido por Samuel Ferreira.</p> </footer>
+                         </head> <body> <div> <nav> <ul> <li><a href="index.html"><img src="img/Home.png" alt="Início"></a></li> </ul> </nav> </div> </body>
+                        <script src="script.js"></script>
+                        </body>
+                        </html>
+              
+              

@@ -1,0 +1,421 @@
+
+body {
+    font-family: Arial, sans-serif;
+    animation: colorChange 5s infinite;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: url('img/barber brothers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+}
+
+
+/*aqui eu posso mudar texto do menu prav cima ou pra baixo*/
+
+nav ul {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a img {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+nav ul li a span {
+    margin-bottom: 5px;
+}
+
+
+
+header {
+    animation: colorChange 5s infinite;
+    background: rgba(0, 0, 0, 0.455); 
+    color: #fff;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+header .content { display: flex; flex-direction: column; align-items: center; }
+ 
+header .content h1 { font-size: 3.5rem; }
+
+header .content p { font-size: 1.5rem; }
+
+header .logo { display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; background-color: #ebdede00; 
+    padding: -1px; }
+
+
+
+a.ver-mapa { color: white; text-decoration: none; } 
+a.ver-mapa img { width: 100px; /* ajuste o tamanho da imagem conforme necessário */ height: auto; }
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+  
+
+  a span {
+    display: block;
+  }
+  
+
+.logo h3 {
+   color: rgb(233, 233, 233);
+   font-size: 1. 6rem;
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /*aqui eu posso mudar a largura do fundo principal*/
+    height: 100%;/*aqui eu posso mudar a altura do fundo principal*/
+    background: rgba(8, 8, 8, 0.726); /*aqui eu posso mudar a cor do fundo principal*/
+    z-index: -1;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: -0 auto;
+    padding: -0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+header .logo img {
+    max-height: 100px;
+    margin-right: 100px;
+}
+
+header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .title h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+  }
+  
+  .gallery-item {
+    width: 150px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.444);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  
+    @media (max-width: 1024px) {
+        .gallery-item {
+        width: 180px;
+        height: 120px;
+        }
+    }
+  
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+      width: 150px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      width: 100px;
+      height: 80px;
+    }
+  }
+  
+  .footer-center { display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; /* ajuste conforme necessário */ 
+    text-align: center; }
+
+header { 
+    background: rgba(0, 0, 0, 0); 
+    color: #fff;
+    padding: 1rem 0;
+    text-align:start, justify; /* aqui eu posso  mudar o modelo do sobre nós */
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+.about-box {
+    border: 5px solid #fa0505;
+    padding: 50px;
+    margin: 130px;
+    animation: colorChange 5s infinite; }
+
+
+nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li a img {
+    width:60px; /* ajuste o tamanho conforme necessário */
+    height:60px; /* ajuste o tamanho conforme necessário */
+    margin-right:15px;
+  }
+
+
+body { font-family: 'Roboto', sans-serif; } 
+nav ul { list-style-type: none; padding: 0; } 
+nav ul li { display: inline; margin-right: 19px; } 
+nav ul li a { text-decoration: none; font-size: 23px; 
+animation: colorChange 5s infinite; } 
+@keyframes colorChange { 0% { color: red; } 25% { color: rgb(255, 255, 255); } 50% { color: green; } 75% { color: rgb(8, 103, 246); } 100% { color: rgb(254, 0, 0);} 100% { color: rgb(255, 255, 255); } } 
+
+
+.return-to-top button:hover {
+    background-color: #100f0f;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+.dropdown-content a:hover {background-color: #0b0b0b89;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    nav ul li:last-child {
+        margin-left: 0;
+    }
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li:last-child {
+    margin-left: auto;
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    nav ul li:last-child {
+        margin-left: 0;
+    }
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro h2, .photos h2, .contact h2, .address h2 {
+    text-align: space-between;
+    
+      }   
+   }
+
+
+
+
+/* Estilo base para o menu */
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+/* Ocultar checkbox */
+#menuToggle {
+  display: none;
+}
+
+/* Estilo do ícone do menu */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menuToggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+}
