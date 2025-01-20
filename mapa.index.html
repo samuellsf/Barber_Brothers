@@ -4,62 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-</head>
-  <body>
-    <header>
-      <div class="content">
-        <div class="content">
-          <div style="display: flex; justify-content: center; align-items: center;">
-             <img src="img/berber brothers.png" alt="Barber Brothers"style="width: 15%; margin-right: 25px;">
-                <div class="title">
-                <h1>Barber Brothers</h1>
-            </div>
-          <img src="img/berber brothers.png" alt="Barber Brothers"style="width: 15%; margin-right: 25px;">
-        </div>
-      <nav>
-        <ul>
-           <li>
-                 </head> <body> <div> <nav> <ul> <li><a href="index.html"><img src="img/Home.png" alt="Início"></a></li> 
-                </ul> 
-               </nav> 
-              </div> 
-            </body>
-             </ul>
-            </nav>
-        </div> 
-    </header>
-        <header> <h1>Bem-vindo ao mapa de Localização</h1></header>
-           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw-pp3oR6wUZUxcH0V_q6paTVP1aZBAB0&callback=initMap"
-              async defer></script>
-          <style>
-            
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         #map {
-        width: 100%;
-        height: 700px;
-        background: #f1f1f1;
-        margin:9px 0;
-        
-      }
-      </style>
-      </head>
-      <body>
-     <div id="map"></div>
-     <script>
-       function initMap() {
-        const myLocation = {lat: -15.80683, lng: -48.11624}; // Brasília, Brasil
-
-        const map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: myLocation
-        });
-
-        const marker = new google.maps.Marker({
-          position: myLocation,
-          map: map,
-          title: 'Brasília, Brasil'
-          
-        });
-      }
-       </script>
-       </body>
-       </html>
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="content">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="img/berber brothers.png" alt="Barber Brothers" style="width: 15%; margin-right: 25px;">
+                    <div class="title">
+                        <h1>Barber Brothers</h1>
+                    </div>
+                    <img src="img/berber brothers.png" alt="Barber Brothers" style="width: 15%; margin-right: 25px;">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><img src="img/Home.png" alt="Início"></a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </div>
+    </header>
+    <header>
+        <h1>Bem-vindo ao mapa de Localização</h1>
+    </header>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw-pp3oR6wUZUxcH0V_q6paTVP1aZBAB0&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            const myLocation = {lat: -15.80683, lng: -48.11624}; // Brasília, Brasil
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: myLocation
+            });
+            const marker = new google.maps.Marker({
+                position: myLocation,
+                map: map,
+                title: 'Brasília, Brasil'
+            });
+        }
+    </script>
+</body>
+</html>
