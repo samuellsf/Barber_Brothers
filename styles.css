@@ -294,7 +294,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: px;
 }
 nav ul li {
     position: relative;
@@ -438,7 +438,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 0px;
 }
 
 .logo {
@@ -485,7 +485,7 @@ label {
 }
 
 input, select, textarea, button {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -497,7 +497,8 @@ button {
   color: white;
   cursor: pointer;
   border: none;
-}
+} 
+
 
 button:hover {
   background-color: #333;
